@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV - María Inés Coaquiranina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#8A6414; --gold-mid:#B8892B; --gold-soft:#F1E2B8; --ink:#2A2114; --muted:#6B5D45; --paper:#FFFFFF; --bg:#EFE9DB;
+  --head:'Fraunces',Georgia,serif; --body:'Figtree','Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;padding:32px 16px}
+.cv{max-width:900px;margin:0 auto;background:var(--paper);display:grid;grid-template-columns:290px 1fr;box-shadow:0 10px 40px rgba(60,40,5,.18);overflow:hidden}
+aside{background:linear-gradient(180deg,#8A6414 0%,#6F500F 100%);color:#fff;padding:40px 28px}
+.photo{display:block;width:176px;height:176px;margin:0 auto 28px;border-radius:50%;border:5px solid var(--gold-soft);background:#A47A1E;overflow:hidden;cursor:pointer;position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:none}
+.photo.has img{display:block}
+.photo .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:.85rem;padding:16px;color:#FBF1D5}
+.photo.has .ph{display:none}
+.photo .ph b{font-family:var(--head);font-size:2.6rem;line-height:1;margin-bottom:6px;color:#fff}
+.photo input{display:none}
+.photo:focus-within{outline:3px solid #fff;outline-offset:3px}
+aside h2{font-family:var(--head);font-size:1.1rem;font-weight:700;color:var(--gold-soft);padding-bottom:6px;margin:26px 0 12px;border-bottom:1px solid rgba(241,226,184,.45)}
+aside ul{list-style:none}
+aside li{font-size:.92rem;margin-bottom:10px;word-break:break-word}
+main{padding:44px 40px}
+h1{font-family:var(--head);font-size:2.5rem;line-height:1.1;font-weight:700;color:var(--ink)}
+.role{margin-top:10px;color:var(--gold);font-weight:600;font-size:1.02rem}
+.bar{width:64px;height:4px;background:var(--gold-mid);margin:18px 0 6px;border-radius:2px}
+main h2{font-family:var(--head);font-size:1.3rem;color:var(--gold);margin:30px 0 10px}
+main p{max-width:62ch}
+.edu{border-left:4px solid var(--gold-mid);padding:4px 0 4px 16px}
+.edu strong{display:block;font-size:1.02rem}
+.edu span{color:var(--muted);font-size:.95rem}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.skill{background:#FBF5E3;border:1px solid var(--gold-soft);border-radius:10px;padding:14px 16px}
+.skill b{display:block;color:var(--gold);margin-bottom:2px}
+.skill span{font-size:.9rem;color:var(--muted)}
+@media(max-width:720px){.cv{grid-template-columns:1fr}main{padding:32px 24px}.skills{grid-template-columns:1fr}h1{font-size:2rem}}
+@media print{body{background:#fff;padding:0}.cv{box-shadow:none;max-width:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.photo .ph{display:none}}
+</style>
+</head>
+<body>
+<div class="cv">
+  <aside>
+    <label class="photo has" id="photo" title="Haz clic para cambiar tu foto">
+      <img id="img" src="foto.jpg" alt="Foto de María Inés Coaquiranina">
+      <span class="ph"><b>MC</b>Haz clic para agregar tu foto</span>
+      <input type="file" id="file" accept="image/*">
+    </label>
+
+    <h2>Contacto</h2>
+    <ul>
+      <li>940 323 250</li>
+      <li>mariacoaquiranina@gmail.com</li>
+      <li>Santa Lucía, Lampa, Puno</li>
+    </ul>
+
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Español</li>
+      <li>Quechua</li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>María Inés Coaquiranina</h1>
+    <p class="role">Estudiante de Arquitectura de Plataformas y Servicios de Tecnologías de la Información</p>
+    <div class="bar"></div>
+
+    <h2>Objetivo profesional</h2>
+    <p>Estudiante de sexto semestre en busca de prácticas preprofesionales en tecnologías de la información, donde pueda aplicar mis conocimientos en fibra óptica, bases de datos y herramientas ofimáticas, y seguir desarrollando mi experiencia profesional.</p>
+
+    <h2>Formación académica</h2>
+    <div class="edu">
+      <strong>Instituto de Educación Superior Tecnológico Público Santa Lucía</strong>
+      <span>Programa de estudios: Arquitectura de Plataformas y Servicios de Tecnologías de la Información (APSTI)</span><br>
+      <span>Sexto semestre (en curso)</span>
+    </div>
+
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div class="skill"><b>Microsoft Excel</b><span>Manejo práctico de hojas de cálculo</span></div>
+      <div class="skill"><b>Diseño gráfico</b><span>Elaboración de material visual</span></div>
+      <div class="skill"><b>Fibra óptica</b><span>Conocimientos prácticos en redes</span></div>
+      <div class="skill"><b>Bases de datos</b><span>Gestión y uso de bases de datos</span></div>
+    </div>
+
+    <h2>Datos adicionales</h2>
+    <p>Disponibilidad para realizar prácticas preprofesionales. Referencias disponibles a solicitud.</p>
+  </main>
+</div>
+
+<script>
+document.getElementById('file').addEventListener('change', function (e) {
+  var f = e.target.files[0];
+  if (!f) return;
+  var r = new FileReader();
+  r.onload = function () {
+    document.getElementById('img').src = r.result;
+    document.getElementById('photo').classList.add('has');
+  };
+  r.readAsDataURL(f);
+});
+</script>
+</body>
+</html>
